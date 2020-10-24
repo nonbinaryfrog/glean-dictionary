@@ -82,6 +82,8 @@
       </li>
     {/each}
   </ul>
-{:else}
-  <NotFound pageName={params.app} itemType="application" />
+{#if Error}
+  <NotFound pageName={params.app} itemType="application" /> {/if}
 {/if}
+
+
